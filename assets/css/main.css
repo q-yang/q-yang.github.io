@@ -98,8 +98,8 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Open Sans', sans-serif;
-		line-height: 1.85em;
+		font-family: 'Roboto', sans-serif;
+		line-height: 1.5em;
 		color: #888;
 		font-weight: 300;
 		font-size: 13pt;
@@ -110,12 +110,12 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #43B3E0;
-		text-decoration: underline;
+		color: #3168df;
+		text-decoration: none;
 	}
 
 		a:hover {
-			color: #43bff0 !important;
+			color: #de0cf1 !important;
 		}
 
 		a img {
@@ -151,7 +151,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
-		margin: 0 0 0.75em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -160,29 +160,96 @@ input, select, textarea {
 	}
 
 	h2, h3, h4, h5, h6 {
+		font-weight: 500;
+	}
+
+h1 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 1.6em;
+	letter-spacing: 0em;
+	font-weight: 600;
+}
+
+	h1 strong {
 		font-weight: 700;
 	}
 
-	h1 {
-		font-size: 3.25em;
-		letter-spacing: -0.025em;
-		font-weight: 300;
-	}
+h2 {
+	font-weight: 400;
+	font-size: 1.6em;
+	letter-spacing: -0.015em;
+	color: #3e3e3e;
+	margin: 0em 0 0.5em 0;
+}
+h2 strong {
+	font-weight: 800;
+}
 
-		h1 strong {
-			font-weight: 700;
-		}
+p {
+	font-weight: 400;
+	font-size: 0.9em;
+	letter-spacing: 0em;
+	color: #3e3e3e;
+	line-height: 1.4em;
+	margin: 0 0 -0.5em 0;
+	text-align: justify;
+}
+p num {
+	color: #a60ccc;	
+}
 
-	h2 {
-		font-size: 2em;
-		letter-spacing: -0.015em;
-	}
+p name {
+	font-weight: 600;	
+}
 
-	h3 {
-		font-size: 1.5em;
-		letter-spacing: -0.015em;
-	}
+p trans {
+	font-style: italic;	
+}
 
+h3 {
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: 0em;
+	color: #3e3e3e;
+	line-height: 1.8em;
+	margin: 0 0 0 0;
+}
+h3 strong {
+	font-weight: 500;	
+}
+
+h3 weak {
+	font-weight: 400;
+	color: #aeaeae;
+}
+
+h3 a {
+	-moz-transition: color .2s ease-in-out;
+		-webkit-transition: color .2s ease-in-out;
+		-ms-transition: color .2s ease-in-out;
+		transition: color .2s ease-in-out;
+		color: #3168df;
+		text-decoration: none;
+}
+
+h4 {
+	text-align: left;
+	font-weight: 600;
+	font-size: 1em;
+	letter-spacing: 0em;
+	color: #3e3e3e;
+	line-height: 1em;
+	margin: 0 0 0.5em 0;
+}
+
+h4 a {
+	-moz-transition: color .2s ease-in-out;
+		-webkit-transition: color .2s ease-in-out;
+		-ms-transition: color .2s ease-in-out;
+		transition: color .2s ease-in-out;
+		color: #3168df;
+		text-decoration: none;
+}
 	em, i {
 		font-style: italic;
 	}
@@ -197,15 +264,15 @@ input, select, textarea {
 		border-top-color: rgba(0, 0, 0, 0.35);
 		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
 		height: 1px;
-		margin: 3em 0;
+		margin: 1em 0;
 	}
 
-	p, ul, ol, dl, table {
+	ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
 
 	header {
-		margin: 0 0 3em 0;
+		margin: 0 0 0em 0;
 	}
 
 		header > p {
@@ -224,9 +291,9 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		margin: 0 auto 1em auto;
 		max-width: calc(100% - 50px);
-		width: 1200px;
+		width: 1000px;
 	}
 
 		.container.medium {
@@ -236,7 +303,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.container {
-				width: 1200px;
+				width: 1000px;
 			}
 
 				.container.medium {
@@ -1629,8 +1696,25 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-			width: 100%;
 		}
+
+.photo img {
+	display: block;
+	margin: 0 1em 0 0;
+	height: 160px;
+	border-radius: 10%;
+	float: right;
+}
+
+.fig img {
+	display: block;
+	margin: auto;
+	width: 320px;
+	border-radius: 2%;
+	float: left;
+
+}
+
 
 		.image.fit {
 			display: block;
@@ -1650,7 +1734,7 @@ input, select, textarea {
 
 		.image.centered {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
 		}
 
 			.image.centered img {
@@ -1989,7 +2073,7 @@ input, select, textarea {
 	.wrapper {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 8em 0 8em 0;
+		padding: 1em 0 1em 0;
 		text-align: center;
 	}
 
@@ -2044,11 +2128,12 @@ input, select, textarea {
 		width: 100%;
 		z-index: 10000;
 		cursor: default;
-		height: 3.5em;
-		line-height: 3.5em;
+		height: 2em;
+		line-height: 2em;
 	}
 
 		#nav ul {
+			font-size: 0.9em;
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
@@ -2070,11 +2155,11 @@ input, select, textarea {
 			text-decoration: none;
 			outline: 0;
 			font-weight: 600;
-			border-radius: 8px;
+			border-radius: 1px;
 			color: #fff;
-			height: 2.5em;
-			line-height: 2.5em;
-			padding: 0 1.25em;
+			height: 2;
+			line-height: 2em;
+			padding: 0 2em;
 		}
 
 			#nav a:hover {
@@ -2083,20 +2168,20 @@ input, select, textarea {
 			}
 
 			#nav a.active {
-				background: #484848;
+				background: #d3d3d300;
 			}
 
-				#nav a.active:before {
-					content: '';
-					display: block;
-					position: absolute;
-					bottom: -0.6em;
-					left: 50%;
-					margin-left: -0.75em;
-					border-left: solid 0.75em transparent;
-					border-right: solid 0.75em transparent;
-					border-top: solid 0.6em #282828;
-				}
+			#nav a.active:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -0.6em;
+				left: 50%;
+				margin-left: -0.75em;
+				border-left: solid 0.75em transparent;
+				border-right: solid 0.75em transparent;
+				border-top: solid 0.6em #282828;
+			}
 
 /* Articles */
 
@@ -2105,7 +2190,7 @@ input, select, textarea {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		padding: 2em 0 2em 0;
 		text-align: left;
 	}
 
@@ -2121,7 +2206,7 @@ input, select, textarea {
 			}
 
 		#top h1 {
-			margin-top: 0.35em;
+			margin-top: 0em;
 		}
 
 		#top p {
@@ -2178,26 +2263,28 @@ input, select, textarea {
 /* Large */
 
 	@media screen and (max-width: 1280px) {
-
+		.fig img {			
+			width: 300px;		
+		}
 		/* Basic */
 
 			body {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 			input, textarea, select {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 			header {
-				margin: 0 0 4em 0;
+				margin: 0 0 0em 0;
 			}
 
 		/* Wrappers */
 
 			.wrapper {
-				padding: 5em 0 5em 0;
-				text-align: center;
+				padding: 1em 0 1em 0;
+				text-align: left;
 			}
 
 				.wrapper.style4 .row-special {
@@ -2208,7 +2295,7 @@ input, select, textarea {
 		/* Articles */
 
 			#top {
-				padding: 8em 0;
+				padding: 1em 0;
 			}
 
 				#top .image {
@@ -2222,7 +2309,12 @@ input, select, textarea {
 /* Medium */
 
 	@media screen and (max-width: 980px) {
-
+		.fig img {			
+			width: 110px;		
+		}
+		h3 {
+			font-size: 0.9em;
+		}
 		/* Articles */
 
 			#top {
@@ -2231,7 +2323,7 @@ input, select, textarea {
 			}
 
 				#top .image {
-					margin: 0 auto 2em auto;
+					margin: 0 auto 0em auto;
 				}
 
 	}
@@ -2239,48 +2331,22 @@ input, select, textarea {
 /* Small */
 
 	@media screen and (max-width: 736px) {
+		body, input, textarea, select {
+			font-size: 11pt;
+			letter-spacing: 0;
+		}
+
+		.fig img {			
+			width: 450px;	
+		}
+		h3 {
+			font-size: 0.9em;
+		}
 
 		/* Basic */
 
-			body {
-				padding-top: 44px;
-			}
 
-			body, input, textarea, select {
-				line-height: 1.75em;
-				font-size: 10pt;
-				letter-spacing: 0;
-			}
 
-			h1, h2, h3, h4, h5, h6 {
-				font-size: 1.25em;
-				margin: 0 0 0.4em 0;
-			}
-
-			h1 {
-				font-size: 2.25em;
-				line-height: 1.25em;
-			}
-
-			header {
-				margin: 0 0 2em 0;
-			}
-
-				header > p {
-					font-size: 1.25em;
-				}
-
-			footer {
-				margin: 2.5em 0 0 0;
-			}
-
-				footer > p {
-					font-size: 1.25em;
-				}
-
-			hr {
-				margin: 1.5em 0 2em 0;
-			}
 
 		/* Section/Article */
 
@@ -2388,19 +2454,20 @@ input, select, textarea {
 		/* Nav */
 
 			#nav {
-				height: 44px;
-				line-height: 44px;
+				height: 30px;
+				line-height: 30px;
 			}
 
 				#nav a {
-					padding: 0 0.75em;
+					padding: 0em 0.3em 0 0.3em;
 					height: inherit;
 					line-height: inherit;
 					border-radius: 0;
 				}
 
 					#nav a:hover {
-						background-color: transparent;
+						color: #fff !important;
+						background: #383838;
 					}
 
 		/* Articles */
