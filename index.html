@@ -5,214 +5,514 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Qing Yang @ SZU</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/icon_yq.png">
-	</head>
-	<body class="is-preload">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#home">Top</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#research">Research</a></li>
-					<li><a href="#publication">Publication</a></li>
-					<li><a href="#teaching">Teaching</a></li>
-					<li><a href="#service">Services</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+<head>
+	<title>Qing Yang @ SZU</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="images/icon_yq.png">
+</head>
 
-		
-			<div id="home" class="container">
-				<div class="row">
-					<div class="col-3 col-4-small">
-						<span class="photo"><img src="images/yq.jpg" alt="Qing's photo" /></span>
-					</div>
-					<div class="col-9 col-8-small">
-						<h2>Qing <strong>Yang</strong></h2>
-						<h3><i class="fas fa-dice-one"></i> Assistant Professor at Shenzhen University</h3>
-						<h3><i class="fas fa-dice-two"></i> Principle Researcher at the Blockchain Technology Research Center</h3>
-						<h3><i class="fas fa-envelope-square"></i> Email: yang.qing<i class="fas fa-at"></i>szu.edu.cn</h3>
-						<h3><i class="fas fa-th-large"></i> Info: Here is my <a href="docu/QingYang_CV.pdf" target="_blank"> CV [ <i class="fas fa-file-pdf"></i> ]</a></h3>
-					</div>
+<body class="is-preload">
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="#home"><i class="fas fa-chevron-circle-up"></i></a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#research">Research</a></li>
+			<li><a href="#publication">Publication</a></li>
+			<li><a href="#teaching">Teaching</a></li>
+			<li><a href="#service">Services</a></li>
+			<li><a href="#misc">Misc</a></li>
+		</ul>
+	</nav>
+
+
+	<div id="home" class="container">
+		<div class="row">
+			<div class="col-3-small">
+				<span class="photo"><img src="images/yq.jpg" alt="Qing's photo" /></span>
+			</div>
+			<div class="col-9-small">
+				<h2>Qing <strong>Yang</strong></h2>
+				<h3><i class=" fas fa-dice-one"></i> Assistant Professor at Shenzhen University</h3>
+				<h3><i class=" fas fa-dice-two"></i> Principle Researcher at the Blockchain Technology Research Center
+				</h3>
+				<h3><i class=" fas fa-envelope-square"></i> yang.qing<i class="fas fa-at"></i>szu.edu.cn</h3>
+				<h3><i class=" fas fa-info-circle"></i> Here is my <a href="docu/QingYang_CV.pdf" target="_blank">
+						CV [ <i class="fas fa-file-pdf"></i> ]</a></h3>
+			</div>
+		</div>
+	</div>
+
+	<article id="about" class="wrapper style2">
+		<div class="container">
+			<div class="row">
+				<h1>About me</h1>
+			</div>
+			<div class="row">
+				<p>
+					I received my B.E. degree (advanced class) from Huazhong University
+					of Science and Technology and Ph.D. degree from The Chinese University
+					of Hong Kong. In 2018, I joined the Shenzhen University as an assistant
+					professor in the College of Electronics and Information Engineering and also
+					the principal researcher in the Blockchain Technology Research Center of
+					Shenzhen University. My research interests span blockchain technology,
+					intelligent energy in smart grid, and wireless networking. I prefer system implementation
+					than mathematical modeling. I am looking for both academic and industrial collaborations.
+				</p>
+			</div>
+		</div>
+	</article>
+
+	<article id="research" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<h1>Selected Research</h1>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-3-medium col-12-small">
+					<span class="fig"><img src="images/bigstation.png" alt="Bigstation" /></span>
+				</div>
+				<div class="col-8 col-9-medium col-12-small">
+					<h4>Practical Massive MIMO <a href="https://dl.acm.org/doi/10.1145/2486001.2486016" target="_blank">
+							[ <i class="fas fa-link"></i> ACM SIGCOMM '13 ]</a></h4>
+					<p>We designed and implemented BigStation, a
+						scalable architecture that enables realtime signal processing in large-scale MIMO
+						systems which may have tens or hundreds of antennas. Our strategy to scale is to
+						extensively parallelize the MU-MIMO processing on many simple and low-cost commodity
+						computing devices. Our design can incrementally support more antennas by proportionally
+						adding more computing devices. To reduce the overall processing latency, which is a
+						critical constraint for wireless communication, we parallelize the MU-MIMO processing
+						with a distributed pipeline based on its computation and communication patterns. At
+						each stage of the pipeline, we further use data partitioning and computation partitioning
+						to increase the processing speed. As a proof of concept, we have built a BigStation
+						prototype based on commodity PC servers and standard Ethernet switches. Our prototype
+						employs 15 PC servers and can support real-time processing of 12 software radio antennas.
+						Our results show that the BigStation architecture is able to scale to tens to hundreds
+						of antennas. With 12 antennas, our BigStation prototype can increase wireless capacity
+						by 6.8x with a low mean processing delay of 860μs. While this latency is not yet low
+						enough for the 802.11 MAC, it already satisfies the real-time requirements of many
+						existing wireless standards, e.g., LTE and WCDMA.</p>
 				</div>
 			</div>
-		
-		<article id="about" class="wrapper style2">
-			<div class="container">
-				<div class="row">
-					<h1>About me</h1>
+			<hr>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-3-medium col-12-small">
+					<span class="fig"><img src="images/tii.png" alt="Bigstation" /></span>
 				</div>
-				<div class="row">
-					<p>
-						I received my B.E. degree (advanced class) from Huazhong University
-						of Science and Technology and Ph.D. degree from The Chinese University 
-						of Hong Kong. In 2018, I joined the Shenzhen University as an assistant 
-						professor in the College of Electronics and Information Engineering and also 
-						the principal researcher in the Blockchain Technology Research Center of 
-						Shenzhen University. My research interests span blockchain technology, 
-						intelligent energy in smart grid, and wireless networking. I prefer system implementation
-						than mathematical modeling. I am looking for both academic and industrial collaborations.
+				<div class="col-8 col-9-medium col-12-small">
+					<h4>Blockchain-Empowered Transactive Energy <a href="https://ieeexplore.ieee.org/document/9208788"
+							target="_blank"> [ <i class="fas fa-link"></i> IEEE TII ]</a></h4>
+					<p>Transactive energy plays a key role in the operation and energy management of future power
+						systems.
+						However, the conventional operational mechanism, which follows a centralized design, is often
+						less
+						secure, vulnerable to malicious behaviors, and suffers from privacy leakage. In this work, we
+						introduce blockchain technology in transactive energy to address these challenges. Specifically,
+						we develop a novel blockchain-based transactive energy framework for prosumers and design a
+						decentralized energy trading algorithm that matches the operation of the underlying blockchain
+						system. We prove that the trading algorithm improves the individual benefit and guarantees the
+						socially optimal performance, and thus incentivizes prosumers to join the transactive energy
+						platform. Moreover, we evaluate the feasibility of the transactive energy platform throughout
+						the implementation of a small-scale network of Internet of Things (IoT) devices and extensive
+						simulations using real-world data. Our results show that this blockchain-based transactive
+						energy platform is feasible in practice, and the decentralized trading algorithm reduces the
+						user's individual cost by up to 77\% and lowers the overall cost by 24\%.</p>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-3-medium col-12-small">
+					<span class="fig"><img src="images/iotm.png" alt="Bigstation" /></span>
+				</div>
+				<div class="col-8 col-9-medium col-12-small">
+					<h4>Secure Blockchain Applications <a href="https://arxiv.org/abs/2110.15161" target="_blank"> [ <i
+								class="fas fa-link"></i> IEEE IoT Magazine ]</a></h4>
+					<p>As a disruptive technology that originates from cryptocurrency, blockchain provides a trusted
+						platform to facilitate industrial IoT (IIoT)
+						applications. However, implementing a blockchain platform in IIoT scenarios confronts various
+						security challenges due to the rigorous
+						deployment condition. To this end, we present a novel design of secure blockchain based on
+						trusted computing hardware for IIoT applications.
+						Specifically, we employ the trusted execution environment (TEE) module and a customized security
+						chip to safeguard the blockchain against
+						different attacking vectors. Furthermore, we implement the proposed secure IIoT blockchain on
+						the ARM-based embedded device and build a
+						small-scale IIoT network to evaluate its performance. Our experimental results show that the
+						secure blockchain platform achieves a high
+						throughput (150TPS) with low transaction confirmation delay (below 66ms), demonstrating its
+						feasibility in practical IIoT scenarios.
+						Finally, we outline the open challenges and future research directions.</p>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-3-medium col-12-small">
+					<span class="fig"><img src="images/pnc.png" alt="Bigstation" /></span>
+				</div>
+				<div class="col-8 col-9-medium col-12-small">
+					<h4>Physical-Layer Network Coding <a href="https://ieeexplore.ieee.org/document/6940322"
+							target="_blank"> [ <i class="fas fa-link"></i> IEEE TWC ]</a></h4>
+					<p>This paper investigates the decoding process of asynchronous convolutional-coded physical-layer
+						network coding (PNC) systems. Specifically, we put forth
+						a layered decoding framework for convolutional-coded PNC consisting of three layers: symbol
+						realignment layer, codeword realignment layer, and joint
+						channel-decoding network coding (Jt-CNC) decoding layer. Our framework can deal with phase
+						asynchrony (phase offset) and symbol arrival-time asynchrony
+						(symbol misalignment) between the signals simultaneously transmitted by multiple sources. A
+						salient feature of this framework is that it can handle
+						both fractional and integral symbol misalignments. For the decoding layer, instead of Jt-CNC,
+						previously proposed PNC decoding algorithms (e.g.,
+						XOR-CD and reduced-state Viterbi algorithms) can also be used with our framework to deal with
+						general symbol misalignments. Our Jt-CNC algorithm,
+						based on belief propagation, is BER-optimal for synchronous PNC and near optimal for
+						asynchronous PNC. Extending beyond convolutional codes, we
+						further generalize the Jt-CNC decoding algorithm for all cyclic codes. Our simulation shows that
+						Jt-CNC outperforms the previously proposed XOR-CD
+						algorithm and reduced-state Viterbi algorithm by 2 dB for synchronous PNC. For both
+						phase-asynchronous and symbol-asynchronous PNC, Jt-CNC performs
+						better than the other two algorithms. Importantly, for real wireless network experimentation, we
+						implemented our decoding algorithm in a PNC
+						prototype built on the USRP software radio platform. Our experiment shows that the proposed
+						Jt-CNC decoder works well in practice.</p>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<article id="publication" class="wrapper style2">
+		<div class="container">
+			<div class="row">
+				<h1>Publications</h1>
+			</div>
+			<div class="row">
+				<h4></i>Journal Papers</h4>
+			</div>
+			<div class="row pub">
+				<p><i class="paper fas fa-caret-right"></i> Secure Blockchain Platform for Industrial IoT with Trusted
+					Computing Hardware
+					<a href="https://arxiv.org/abs/2110.15161" target="_blank"> [ <i class="fas fa-link"></i> arXiv
+						]</a><br>
+					<name>Qing Yang</name>, H. Wang<sup>*</sup>, X. Wu, T. Wang, S. Zhang, N. Liu, <trans>IEEE Internet
+						of Things
+						Magazine</trans>, Accepted for publication
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Blockchain-Empowered Socially Optimal Transactive Energy
+					System: Framework and Implementation
+					<a href="https://ieeexplore.ieee.org/document/9208788" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE TII ]</a><br>
+					<name>Q. Yang</name>, H. Wang<sup>*</sup>, <trans>IEEE Transaction on Industrial Informatics</trans>
+					, 2021
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Ethna: Analyzing the Underlying Peer-to-Peer Network of
+					Ethereum Blockchain
+					<a href="https://ieeexplore.ieee.org/document/9426434" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE
+						TNSE ]</a><br>
+					T. Wang, C. Zhao, <name>Qing Yang</name>, S. Zhang<sup>*</sup>, S. C. Liew, <trans>IEEE Transactions
+						on Network Science and Engineering</trans>, 2021
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Privacy-Preserving Transactive Energy Management for
+					IoT-aided Smart Homes via Blockchain
+					<a href="https://ieeexplore.ieee.org/document/9321378" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE IoTJ ]</a><br>
+					<name>Q. Yang</name>, H. Wang<sup>*</sup>, <trans>IEEE Internet of Things Journal</trans>, 2021
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Blockchain-Based Decentralized Energy Management Platform
+					for Residential Distributed Energy
+					Resources in a Virtual Power Plant
+					<a href="https://www.sciencedirect.com/science/article/pii/S030626192100489X" target="_blank"> [ <i
+							class="fas fa-link"></i> AE ]</a><br>
+					<name>Q. Yang</name>, H. Wang<sup>*</sup>, T. Wang, S. Zhang, X. Wu, H. Wang, <trans>Applied Energy
+					</trans>,
+					2021
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Distributed Energy Trading Management for Renewable
+					Prosumers with HVAC and Energy Storage
+					<a href="https://www.sciencedirect.com/science/article/pii/S2352484721002080" target="_blank"> [ <i
+							class="fas fa-link"></i> ER ]</a><br>
+					<name>Q. Yang</name>, H. Wang<sup>*</sup>, <trans>Energy Reports</trans>, 2021
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Asynchronous Convolutional-Coded Physical-Layer Network
+					Coding
+					<a href="https://ieeexplore.ieee.org/document/6940322" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE TWC ]</a><br>
+					<name>Q. Yang<sup>*</sup></name>, S. C. Liew, <trans>IEEE Transactions on Wireless Communications
+					</trans>, 2015
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Symbol Misalignment Estimation in Asynchronous
+					Physical-Layer Network Coding
+					<a href="https://ieeexplore.ieee.org/document/7487012" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE TVT ]</a><br>
+					<name>Q. Yang</name>, S. C. Liew, L. Lu<sup>*</sup>, Y. Shao, <trans>IEEE Transactions on Vehicular
+						Technology
+					</trans>, 2017
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> DCAP: Improving the Capacity of WiFi Networks with
+					Distributed Cooperative Access Points
+					<a href="https://ieeexplore.ieee.org/document/7935523" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE TMC ]</a><br>
+					T. Wang, <name>Q. Yang<sup>*</sup></name>, K. Tan, J. Zhang, S. C. Liew, S. Zhang, <trans>IEEE
+						Transactions on Mobile Computing</trans>, 2018
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> User Association and Scheduling Based on Auction in
+					Multi-Cell MU-MIMO Systems
+					<a href="https://ieeexplore.ieee.org/document/8332085" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE TWC ]</a><br>
+					M. Xie, <name>Q. Yang<sup>*</sup></name>, T. M. Lok, <trans>IEEE Transactions on Wireless
+						Communications </trans>, 2018
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Non-orthogonal Multiple Access with Phase Predistortion in
+					Visible Light Communication
+					<a href="https://www.osapublishing.org/oe/fulltext.cfm?uri=oe-24-22-25816&id=353405"
+						target="_blank"> [ <i class="fas fa-link"></i> OSA OE ]</a><br>
+					X. Guan, <name>Q. Yang<sup>*</sup></name>, Y. Hong, C. K. Chan, <trans>Optics Express</trans>, 2016
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Joint Detection of Visible Light Communication Signals Under
+					Non-Orthogonal Multiple Access
+					<a href="https://ieeexplore.ieee.org/document/7805224" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE PTL ]</a><br>
+					X. Guan, <name>Q. Yang<sup>*</sup></name>, C. K. Chan, <trans>IEEE Photonics Technology Letters
+					</trans>, 2017
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Phase-Aligned Physical Layer Network Coding in Visible Light
+					Communications
+					<a href="https://ieeexplore.ieee.org/document/8667366" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE PJ ]</a><br>
+					X. Guan, <name>Q. Yang<sup>*</sup></name>, T. Wang, C. K. Chan, <trans>IEEE Photonics Journal
+					</trans>, 2019
+				</p>
+			</div>
+			<br>
+			<div class="row">
+				<h4>Conference Papers</h4>
+			</div>
+			<div class="row pub">
+				<p><i class="paper fas fa-caret-right"></i> Blockchain for Transactive Energy Management of Distributed
+					Energy Resources in Smart Grid
+					<a href="https://dl.acm.org/doi/10.1145/3447555.3464848" target="_blank"> [ <i
+							class="fas fa-link"></i> ACM e-Energy '21
+						]</a><br>
+					<name>Qing Yang</name>, H. Wang, X. Wu, T. Wang, S. Zhang, <trans>ACM International Conference on
+						Future Energy Systems</trans>, 2021
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Cooperative Energy Management of HVAC via Transactive Energy
+					<a href="https://ieeexplore.ieee.org/abstract/document/9264462" target="_blank"> [
+						<i class="fas fa-link"></i> IEEE ICCA '20]</a><br>
+					<name>Q. Yang</name>, H. Wang, <trans>IEEE International Conference on Control & Automation</trans>,
+					2020
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Exploring Blockchain for The Coordination of Distributed
+					Energy Resources
+					<a href="https://ieeexplore.ieee.org/document/9400211" target="_blank"> [ <i
+							class="fas fa-link"></i> IEEE CISS '21]</a><br>
+					<name>Q. Yang</name>, H. Wang, <trans>IEEE Annual Conference on Information Sciences and Systems
+						(CISS)</trans>
+					, 2021
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> BigStation: Enabling Scalable Real-Time Signal Processing in
+					Large MU-MIMO Systems
+					<a href="https://dl.acm.org/doi/10.1145/2486001.2486016" target="_blank"> [
+						<i class="fas fa-link"></i> ACM SIGCOMM '13 ]</a><br>
+					<name>Q. Yang</name>, X. Li, H. Yao, J. Fang, K. Tan, W. Hu, J. Zhang, Y. Zhang, <trans>ACM SIGCOMM
+						2013 Conference</trans>, 2013
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Powerline-PNC: Boosting Throughput of Powerline Networks
+					with Physical-Layer Network Coding
+					<a href="https://ieeexplore.ieee.org/document/7436284" target="_blank"> [
+						<i class="fas fa-link"></i> IEEE SmartGridComm '15 ]</a><br>
+					<name>Q. Yang</name>, H. Wang, T. Wang, L. You, L. Lu and S. C. Liew, <trans>IEEE International
+						Conference on Smart Grid Communications (SmartGridComm)</trans>, 2015
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Optimal Decoding of Convolutional-Coded Physical-Layer
+					Network Coding
+					<a href="https://ieeexplore.ieee.org/document/6952035" target="_blank"> [
+						<i class="fas fa-link"></i> IEEE WCNC '14 ]</a><br>
+					<name>Q. Yang</name> and S. C. Liew, <trans>IEEE Wireless Communications and Networking Conference
+						(WCNC)</trans>, 2014
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Phase Pre-Distortion for Non-Orthogonal Multiple Access in
+					Visible Light Communications
+					<a href="https://ieeexplore.ieee.org/document/7537326" target="_blank"> [
+						<i class="fas fa-link"></i> IEEE OFC '16 ]</a><br>
+					X. Guan, Y. Hong, <name>Q. Yang</name>, C. K. Chan, <trans>IEEE Optical Fiber Communications
+						Conference and Exhibition (OFC)</trans>, 2016
+				</p>
+
+				<p><i class="paper fas fa-caret-right"></i> Real-Time Implementation of Physical-Layer Network Coding
+					<a href="https://dl.acm.org/doi/10.1145/2491246.2491256" target="_blank"> [
+						<i class="fas fa-link"></i> ACM SRIF '13 ]</a><br>
+					L. Lu, L. You, <name>Q. Yang</name>, T. Wang, M. Zhang, S. Zhang, S. C. Liew, <trans>ACM Workshop on
+						Software Radio Implementation Forum</trans>, 2013
+				</p>
+			</div>
+		</div>
+
+	</article>
+
+	<article id="teaching" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<h1>Teaching</h1>
+			</div>
+			<div class="row">
+
+				<p><i class="paper fas fa-bookmark"></i> <strong>[ ECON5004S ]</strong> Blockchain and Crypto-Currency
+					(2nd Semester 2021)<br>
+					<i class="blank fas fa-bookmark"></i>
+					<trans>For graduate students from WeBank Institute of FinTech</trans>
+				</p>
+
+				<p><i class="paper fas fa-bookmark"></i> <strong>[ 2801000072 ]</strong> Computer Organization and
+					Architecture (2nd
+					Semester 2022)<br>
+					<i class="blank fas fa-bookmark"></i>
+					<trans>For sophomore students in the Wenhua Honored Class</trans>
+				</p>
+
+				<p><i class="paper fas fa-bookmark"></i> <strong>[ 2801000052 ]</strong> General Introduction to
+					Electronic and Information Engineering (1st Semester 2021)<br>
+					<i class="blank fas fa-bookmark"></i>
+					<trans>For freshmen from College of Electronic and Information Engineering</trans>
+				</p>
+				<p><i class="paper fas fa-bookmark"></i> <strong>[ 2801000003 ]</strong> An introduction to
+					Electronics and Information Engineering (1st Semester 2020)<br>
+					<i class="blank fas fa-bookmark"></i>
+					<trans>For sophomore students from College of Electronic and
+						Information Engineering</trans>
+				</p>
+
+				<p><i class="paper fas fa-bookmark"></i> <strong>[ 1301260001 ]</strong> Lecture on World Frontier
+					Science and Technology (2nd Semester 2019)<br>
+					<i class="blank fas fa-bookmark"></i>
+					<trans>For junior students from College of Electronic and
+						Information Engineering</trans>
+				</p>
+
+				<p><i class="paper fas fa-bookmark"></i> <strong>[ 1300420001 ]</strong> English for Electronic and
+					Communication Engineering (2nd Semester 2019)<br>
+					<i class="blank fas fa-bookmark"></i>
+					<trans>For junior students from College of Electronic and
+						Information Engineering</trans>
+				</p>
+
+				<p><i class="paper fas fa-bookmark"></i> <strong>[ 1302080001 ]</strong> Modern Communication
+					Technology (2nd Semester 2019)<br>
+					<i class="blank fas fa-bookmark"></i>
+					<trans>For junior students from College of Electronic and
+						Information Engineering</trans>
+				</p>
+
+			</div>
+		</div>
+	</article>
+
+	<article id="service" class="wrapper style2">
+		<div class="container">
+			<div class="row">
+				<h1>Services</h1>
+			</div>
+			<div class="row">
+				<h4>Reviewed papers for the following journals/conferences</h4>
+			</div>
+			<div class="row pub">
+				<div class="col-6 col-12-medium">
+					<p><i class="paper fas fa-caret-right"></i> IEEE Transaction on Industrial Informatics<br>
+						<i class="paper fas fa-caret-right"></i> IEEE Internet of Things Journal<br>
+						<i class="paper fas fa-caret-right"></i> IEEE Transactions on Mobile Computing<br>
+						<i class="paper fas fa-caret-right"></i> IEEE Transactions on Wireless Communications<br>
+						<i class="paper fas fa-caret-right"></i> IEEE Transactions on Vehicular Technology<br>
+						<i class="paper fas fa-caret-right"></i> IEEE Journal on Selected Areas in Communications<br>
+						<i class="paper fas fa-caret-right"></i> IEEE Internet of Things Magazine<br>
+						<i class="paper fas fa-caret-right"></i> Applied Energy<br>
+						<i class="paper fas fa-caret-right"></i> Energy Reports<br>
+						<i class="paper fas fa-caret-right"></i> OSA Optics Express<br>
+					</p>
+				</div>
+				<div class="col-6 col-12-medium">
+					<p><i class="paper fas fa-caret-right"></i> IEEE International Conference on Communications (ICC)<br>
+						<i class="paper fas fa-caret-right"></i> IEEE Global Communications Conference (Globecom)<br>
+						<i class="paper fas fa-caret-right"></i> IEEE SmartGridComm<br>
+						<i class="paper fas fa-caret-right"></i> IEEE International Conference on Computer Communications<br>
+						<i class="paper fas fa-caret-right"></i> Optical Fiber Communication Conference (OFC)<br>
 					</p>
 				</div>
 			</div>
-		</article>
+		</div>
+		
+	</article>
 
-		<article id="research" class="wrapper style1">
-			<div class="container">
-				<div class="row">
-					<h1>Selected Research</h1>
-				</div>
+	<article id="service" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<h1>Miscellaneous</h1>
 			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-4 col-2-medium col-12-small">
-						<span class="fig"><img src="images/bigstation.png" alt="Bigstation" /></span>
-					</div>
-					<div class="col-8 col-10-medium col-12-small">
-						<h4>Practical Massive MIMO <a href="https://dl.acm.org/doi/10.1145/2486001.2486016" target="_blank"> [ <i class="fas fa-link"></i> ACM SIGCOMM '13 ]</a></h4>
-						<p>We designed and implemented BigStation, a 
-							scalable architecture that enables realtime signal processing in large-scale MIMO 
-							systems which may have tens or hundreds of antennas. Our strategy to scale is to 
-							extensively parallelize the MU-MIMO processing on many simple and low-cost commodity 
-							computing devices. Our design can incrementally support more antennas by proportionally 
-							adding more computing devices. To reduce the overall processing latency, which is a 
-							critical constraint for wireless communication, we parallelize the MU-MIMO processing 
-							with a distributed pipeline based on its computation and communication patterns. At 
-							each stage of the pipeline, we further use data partitioning and computation partitioning 
-							to increase the processing speed. As a proof of concept, we have built a BigStation 
-							prototype based on commodity PC servers and standard Ethernet switches. Our prototype 
-							employs 15 PC servers and can support real-time processing of 12 software radio antennas. 
-							Our results show that the BigStation architecture is able to scale to tens to hundreds 
-							of antennas. With 12 antennas, our BigStation prototype can increase wireless capacity 
-							by 6.8x with a low mean processing delay of 860μs. While this latency is not yet low 
-							enough for the 802.11 MAC, it already satisfies the real-time requirements of many 
-							existing wireless standards, e.g., LTE and WCDMA.</p>
-					</div>
-				</div>
-				<hr>
-			</div>
-			
-			<div class="container">
-				<div class="row">
-					<div class="col-4 col-2-medium col-12-small">
-						<span class="fig"><img src="images/tii.png" alt="Bigstation" /></span>
-					</div>
-					<div class="col-8 col-10-medium col-12-small">
-						<h4>Blockchain-Empowered Transactive Energy <a href="https://ieeexplore.ieee.org/document/9208788" target="_blank"> [ <i class="fas fa-link"></i> IEEE TII ]</a></h4>
-						<p>Transactive energy plays a key role in the operation and energy management of future power systems. 
-							However, the conventional operational mechanism, which follows a centralized design, is often less 
-							secure, vulnerable to malicious behaviors, and suffers from privacy leakage. In this work, we 
-							introduce blockchain technology in transactive energy to address these challenges. Specifically, 
-							we develop a novel blockchain-based transactive energy framework for prosumers and design a 
-							decentralized energy trading algorithm that matches the operation of the underlying blockchain 
-							system. We prove that the trading algorithm improves the individual benefit and guarantees the 
-							socially optimal performance, and thus incentivizes prosumers to join the transactive energy 
-							platform. Moreover, we evaluate the feasibility of the transactive energy platform throughout 
-							the implementation of a small-scale network of Internet of Things (IoT) devices and extensive 
-							simulations using real-world data. Our results show that this blockchain-based transactive 
-							energy platform is feasible in practice, and the decentralized trading algorithm reduces the 
-							user's individual cost by up to 77\% and lowers the overall cost by 24\%.</p>
-					</div>
-				</div>
-				<hr>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-4 col-2-medium col-12-small">
-						<span class="fig"><img src="images/iotm.png" alt="Bigstation" /></span>
-					</div>
-					<div class="col-8 col-10-medium col-12-small">
-						<h4>Secure Blockchain Applications <a href="https://arxiv.org/abs/2110.15161" target="_blank"> [ <i class="fas fa-link"></i> IEEE IoT Magazine ]</a></h4>
-						<p>As a disruptive technology that originates from cryptocurrency, blockchain provides a trusted platform to facilitate industrial IoT (IIoT) 
-							applications. However, implementing a blockchain platform in IIoT scenarios confronts various security challenges due to the rigorous 
-							deployment condition. To this end, we present a novel design of secure blockchain based on trusted computing hardware for IIoT applications. 
-							Specifically, we employ the trusted execution environment (TEE) module and a customized security chip to safeguard the blockchain against 
-							different attacking vectors. Furthermore, we implement the proposed secure IIoT blockchain on the ARM-based embedded device and build a 
-							small-scale IIoT network to evaluate its performance. Our experimental results show that the secure blockchain platform achieves a high 
-							throughput (150TPS) with low transaction confirmation delay (below 66ms), demonstrating its feasibility in practical IIoT scenarios. 
-							Finally, we outline the open challenges and future research directions.</p>
-					</div>
-				</div>
-				<hr>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-4 col-2-medium col-12-small">
-						<span class="fig"><img src="images/pnc.png" alt="Bigstation" /></span>
-					</div>
-					<div class="col-8 col-10-medium col-12-small">
-						<h4>Physical-Layer Network Coding <a href="https://ieeexplore.ieee.org/document/6940322" target="_blank"> [ <i class="fas fa-link"></i> IEEE TWC ]</a></h4>
-						<p>This paper investigates the decoding process of asynchronous convolutional-coded physical-layer network coding (PNC) systems. Specifically, we put forth 
-							a layered decoding framework for convolutional-coded PNC consisting of three layers: symbol realignment layer, codeword realignment layer, and joint 
-							channel-decoding network coding (Jt-CNC) decoding layer. Our framework can deal with phase asynchrony (phase offset) and symbol arrival-time asynchrony 
-							(symbol misalignment) between the signals simultaneously transmitted by multiple sources. A salient feature of this framework is that it can handle 
-							both fractional and integral symbol misalignments. For the decoding layer, instead of Jt-CNC, previously proposed PNC decoding algorithms (e.g., 
-							XOR-CD and reduced-state Viterbi algorithms) can also be used with our framework to deal with general symbol misalignments. Our Jt-CNC algorithm, 
-							based on belief propagation, is BER-optimal for synchronous PNC and near optimal for asynchronous PNC. Extending beyond convolutional codes, we 
-							further generalize the Jt-CNC decoding algorithm for all cyclic codes. Our simulation shows that Jt-CNC outperforms the previously proposed XOR-CD 
-							algorithm and reduced-state Viterbi algorithm by 2 dB for synchronous PNC. For both phase-asynchronous and symbol-asynchronous PNC, Jt-CNC performs 
-							better than the other two algorithms. Importantly, for real wireless network experimentation, we implemented our decoding algorithm in a PNC 
-							prototype built on the USRP software radio platform. Our experiment shows that the proposed Jt-CNC decoder works well in practice.</p>
-					</div>
-				</div>				
-			</div>
-		</article>
-	
-		<article id="publication" class="wrapper style2">
-			<div class="container">
-				<div class="row">
-					<h1>Publications</h1>
-				</div>
-				<div class="row">
-					<h4>Journal Papers</h1>
-				</div>
-				<div class="row">
-					<p><num>[J1]</num> Blockchain-Empowered Socially Optimal Transactive Energy System: Framework and Implementation 
-						<a href="https://ieeexplore.ieee.org/document/9208788" target="_blank"> [ <i class="fas fa-link"></i> IEEE TII ]</a><br>
-						<name>Q. Yang</name>, H. Wang, <trans>IEEE Transaction on Industrial Informatics</trans>, 2021</p>	
-
-					<p><num>[J2]</num> Privacy-Preserving Transactive Energy Management for IoT-aided Smart Homes via Blockchain 
-						<a href="https://ieeexplore.ieee.org/document/9321378" target="_blank"> [ <i class="fas fa-link"></i> IEEE IoTJ ]</a><br>
-						<name>Q. Yang</name>, H. Wang, <trans>IEEE Internet of Things Journal</trans>, 2021</p>
-
-					<p><num>[J2]</num> Privacy-Preserving Transactive Energy Management for IoT-aided Smart Homes via Blockchain 
-						<a href="https://ieeexplore.ieee.org/document/9321378" target="_blank"> [ <i class="fas fa-link"></i> IEEE IoTJ ]</a><br>
-						<name>Q. Yang</name>, H. Wang, <trans>IEEE Internet of Things Journal</trans>, 2021</p>
 					
-					<p><num>[J2]</num> Privacy-Preserving Transactive Energy Management for IoT-aided Smart Homes via Blockchain 
-						<a href="https://ieeexplore.ieee.org/document/9321378" target="_blank"> [ <i class="fas fa-link"></i> IEEE IoTJ ]</a><br>
-						<name>Q. Yang</name>, H. Wang, <trans>IEEE Internet of Things Journal</trans>, 2021</p>
-				
-					<p><num>[J2]</num> Privacy-Preserving Transactive Energy Management for IoT-aided Smart Homes via Blockchain 
-						<a href="https://ieeexplore.ieee.org/document/9321378" target="_blank"> [ <i class="fas fa-link"></i> IEEE IoTJ ]</a><br>
-						<name>Q. Yang</name>, H. Wang, <trans>IEEE Internet of Things Journal</trans>, 2021</p>
+			<div class="row pub">	
+					<p><i class="paper fas fa-futbol"></i> I love playing soccer (MF or CB) and I am a big fan of Andrea Pirlo<br>
+						<i class="paper fas fa-utensils"></i> I cook Italian and Spanish cuisine<br>
+						<i class="paper fas fa-palette"></i> I like graphic design and I designed the 
+						<a href="https://www.ie.cuhk.edu.hk/department/overview.shtml" target="_blank"> [
+							logo ]</a> of the Department of Information Engineering in CUHK <br>
+			
+					</p>
+			</div>
+		</div>
+		
+	</article>
 
-					<p><num>[J2]</num> Privacy-Preserving Transactive Energy Management for IoT-aided Smart Homes via Blockchain 
-						<a href="https://ieeexplore.ieee.org/document/9321378" target="_blank"> [ <i class="fas fa-link"></i> IEEE IoTJ ]</a><br>
-						<name>Q. Yang</name>, H. Wang, <trans>IEEE Internet of Things Journal</trans>, 2021</p>				
-				</div>
+	<article id="misc" class="wrapper style4">
+			<div class="row">				
+				<footer id="copyright">
+					<ul >
+						<li>Designed by YQ</li><li>Template from <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+					</ul>
+				</footer>
+			</div>
+	</article>
 
-				</div>
 
-				</article>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
+</body>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
