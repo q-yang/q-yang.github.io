@@ -192,6 +192,7 @@ h2 {
 	letter-spacing: 0em;
 	color: #1e1e1e;
 	margin: 0em 0 0.5em 0;
+	text-align: left;
 }
 h2 strong {
 	font-weight: 800;
@@ -225,6 +226,7 @@ h3 {
 	color: #1e1e1e;
 	line-height: 1.8em;
 	margin: 0 0 0 0;
+	text-align: left;
 }
 h3 strong {
 	font-weight: 500;	
@@ -303,7 +305,7 @@ h4 a {
 /* Container */
 
 	.container {
-		margin: 0 auto 1em auto;
+		margin: 0 auto 0em auto;
 		max-width: calc(100% - 50px);
 		width: 1000px;
 	}
@@ -1710,11 +1712,16 @@ h4 a {
 			display: block;
 		}
 
+.logo {
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
 .photo img {
 	display: block;
 	margin: 0 1em 0 0;
 	height: 160px;
-	border-radius: 25%;
+	border-radius: 10%;
 	float: left;
 }
 
@@ -2085,7 +2092,8 @@ h4 a {
 	.wrapper {
 		/* background-image: url("images/bg.png"); */
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 1em 0 1.5em 0;
+		padding: 0em 0 2.5em 0;
+		margin: 0em auto;
 		text-align: center;
 	}
 
@@ -2141,12 +2149,12 @@ h4 a {
 		width: 100%;
 		z-index: 10000;
 		cursor: default;
-		height: 2em;
-		line-height: 2em;
+		height: 2.6em;
+		line-height: 2.6em;
 	}
 
 		#nav ul {
-			font-size: 0.9em;
+			font-size: 1em;			
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
@@ -2167,7 +2175,7 @@ h4 a {
 			color: #fff;
 			text-decoration: none;
 			outline: 0;
-			font-weight: 600;
+			font-weight: 500;
 			border-radius: 1px;
 			color: #fff;
 			height: 2;
