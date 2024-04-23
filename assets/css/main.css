@@ -2249,8 +2249,8 @@ h4 a {
 
 	#copyright {
 		color: rgb(125, 124, 124);
-		font-size: 0.6em;
-		line-height: 0.5em;
+		font-size: 0.4em;
+		line-height: 0.2em;
 		list-style: none;
 		text-align: center;
 		margin: auto;
@@ -2260,8 +2260,8 @@ h4 a {
 			display: inline-block;
 			border-left: solid 1px rgba(0, 0, 0, 0.5);
 			box-shadow: -1px 0px 0px 0px rgba(255, 255, 255, 0.1);
-			padding: 0 auto 0 1em;
-			margin: 0 auto 0 1em;
+			padding: 0 auto 0 0em;
+			margin: 0 auto 0 0em;
 		}
 
 			#copyright li:first-child {
